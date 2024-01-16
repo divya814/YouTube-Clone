@@ -1,8 +1,8 @@
 import React, { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 
-// import ytLogo from "../images/youtube-logo.webp";
-import logo from "../images/web.jpg"
+import logo from "../images/youtube-logo.webp";
+//import logo from "../images/web.jpg"
 
 import { SlMenu } from "react-icons/sl";
 import { IoIosSearch } from "react-icons/io";
