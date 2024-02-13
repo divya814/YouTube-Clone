@@ -14,7 +14,7 @@ const App = () => {
             <div className='flex flex-col h-full'>
                 <Header></Header>
                 <Routes>
-                    <Route path="/YouTube-Clone" exact element={<Feed/>}/>
+                    <Route path="/" exact element={<Feed/>}/>
                     <Route path="/searchResult/:searchQuery" element={<SearchResult/>}/>
                     <Route path="/video/:id" element={<VideoDetails/>}/>
                 </Routes>

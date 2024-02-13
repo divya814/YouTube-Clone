@@ -25,10 +25,10 @@ const LeftNav = () => {
 
     return (
         <div
-            className={`md:block w-[240px] overflow-y-auto h-full py-3 bg-black absolute md:relative z-10 translate-x-[-240px] md:translate-x-0 transition-all ${mobileMenu ? "translate-x-0" : ""
+            className={`w-[242px] overflow-y-auto h-full py-3 bg-black z-10 translate-x-0 transition ease-in-out delay-200 custom-scroll ${mobileMenu ? "block translate-x-0" : "hidden translate-x-[-100%]"
                 }`}
         >
-            <div className="flex px-4 flex-col">
+            <div className="flex px-3 flex-col ">
                 {categories.map((item) => {
                     return (
                         <React.Fragment key={item.name} >
@@ -46,7 +46,7 @@ const LeftNav = () => {
                                     }`}
                             />
                             {item.divider && (
-                                <hr className="my-5 border-white/[0.2]" />
+                                <hr className="my-4 border-white/[0.2]" />
                             )}
 
                         </React.Fragment>
